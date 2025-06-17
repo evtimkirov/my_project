@@ -1,5 +1,5 @@
 django==4.2.5
 djangorestframework==3.14.0
-pytest==7.3.0           # За тестване
-pytest-django==4.5.2    # Django специфични тестове
-requests==2.28.1        # За HTTP заявки
+pytest==7.3.0
+pytest-django==4.5.2
+requests==2.28.1
