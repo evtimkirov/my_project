@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %}Products{% endblock %}
+{% block content %}
+<h1>Products list</h1>
+<ul>
+  <li>
+    <a href="{% url 'admin:index' %}">Admin panel</a>
+  </li>
+  <li>
+    <a href="{% url 'homepage' %}">Back to home</a>
+  </li>
+</ul>
+<h3>Available products</h3>
+<ul>
+  {% for product in products %}
+  <li>
+    <a href="{% url 'product' id=product.id %}">{{ product.name }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
